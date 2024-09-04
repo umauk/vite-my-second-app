@@ -15,6 +15,11 @@ export const NavBar=()=>{
         <li className="nav-item" style={liStyle}>
         <Link to={"/about"} style={linkStyle}>about</Link>
         </li>
+
+        <li className="nav-item" style={liStyle}>
+        <Link to={"category"} style={linkStyle}>category</Link>
+        </li>
+        
         
       </ul>
     </div>

@@ -1,6 +1,6 @@
 import { NavBar } from "../components/navbar/navbar"
 
-export const HomeScreen=()=>{
+export const  HomeScreen=()=>{
     
     return(
         <>
