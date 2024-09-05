@@ -20,7 +20,7 @@ export const NavigationStack=()=>{
                 <Route path="/about" element={<AboutScreen/>}/>
                 <Route path="/*" element={<InvalidScreen/>}/>
                 <Route path="/category" element={<CategoryScreen/>}>
-                <Route index element={<ElectronicsScreen/>}/>
+                <Route index element={<ProductScreen/>}/>
                 <Route path="jewelery" element={<JewelleryScreen/>}/>
                 <Route path="electronics" element={<ElectronicsScreen/>}/>
                 </Route>

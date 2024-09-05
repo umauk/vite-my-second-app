@@ -19,11 +19,14 @@ export const NavBar=()=>{
         <li className="nav-item" style={liStyle}>
         <Link to={"category"} style={linkStyle}>category</Link>
         </li>
+        <li className="nav-item" style={liStyle}>
+        <Link to={"products"} style={linkStyle}>products</Link>
+        </li>
         
         
       </ul>
     </div>
-  </nav>w
+  </nav>
 
 </>
     )
