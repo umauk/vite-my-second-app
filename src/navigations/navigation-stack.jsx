@@ -8,6 +8,9 @@ import { ElectronicsScreen } from "../screens/electronics-screen"
 import { JewelleryScreen } from "../screens/jwellery-screen"
 import { ProductScreen } from "../screens/products-screen"
 import { ProductDetailedScreen } from "../screens/product-detailed-screen"
+import { RecipeScreen } from "../screens/recipie-scree"
+import { RecipeDetailedScreen } from "../screens/recipe-detailedScreen"
+
 
 export const NavigationStack=()=>{
     return(
@@ -26,6 +29,8 @@ export const NavigationStack=()=>{
                 </Route>
                 <Route path="products" element={<ProductScreen/>}/>
                 <Route path="products/:productsId" element={<ProductDetailedScreen/>}/>
+                <Route path="recipes" element={<RecipeScreen/>}/>
+                <Route path="recipes/:recipesId" element={<RecipeDetailedScreen/>}/>
             </Routes>
             :
             <Routes>

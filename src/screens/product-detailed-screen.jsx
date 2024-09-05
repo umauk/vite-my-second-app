@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 export const ProductDetailedScreen = () => {
-  const dynamicPath = useParams();  // Keep dynamicPath as an object
+  const dynamicPath = useParams();  // 
   const [data, setData] = useState({});
 
   useEffect(() => {
     fetchData();
-  }, [dynamicPath]);  // Using dynamicPath as the dependency
+  }, [dynamicPath]); 
 
   const fetchData = async () => {
     try {

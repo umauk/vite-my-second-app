@@ -1,12 +1,13 @@
 export const CustomList=(props)=>{
-    const {list}=props
+    console.log(props);
+    const {list=[]}=props
     return (
         <ul>
             {
                 
                 
-                    list.map((eachFruit)=>{
-                        return <li>{eachFruit}</li>
+                    list.map((eachFruit,index)=>{
+                        return <li key={index}>{eachFruit}</li>
                     })
                   
                           
