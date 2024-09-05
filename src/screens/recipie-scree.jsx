@@ -6,19 +6,36 @@ import { Link } from "react-router-dom";
 
 export const RecipeScreen=()=>{
     const [recipesData,setRecipesData]=useState([]);
+    const [search,setSearch]=useState("")
     useEffect(()=>{
         fetchData();
-    },[])
+    },[search])
     const fetchData=async()=>{
-        const response= await axios.get("https://dummyjson.com/recipes")
+        const response= await axios.get(`https://dummyjson.com/recipes/search?q=${search}`)
         if(response.status==200){
             setRecipesData(response.data.recipes)
             console.log(response.data.recipes)
         }
     }
+
+    const searchHandler=(event)=>{
+        event.preventDefault();
+        setSearch(event.target.value);
+  
+      }
+
     return(
         <>
         <h3>List of Recipes </h3>
+
+        <div>
+          <input
+          type="text"
+          value={search}
+          onChange={searchHandler}
+          placeholder="search"/>
+        </div>
+
         <Table striped bordered hover>
       <thead>
         <tr>

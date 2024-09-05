@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 export const ProductScreen=()=>{
-    const [data,setData]=useState([])
+    const [data,setData]=useState([]);
     useEffect(()=>{
         fetchData();
     },[])
